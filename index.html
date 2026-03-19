@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página provisional de anime.codes" />
+  <title>anime.codes — Próximamente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="anime.codes inicio">
+      <img src="assets/logo.png" alt="Logo de anime.codes" class="brand-logo" />
+      <span class="brand-name">anime.codes</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="nav-links">
+        <a href="#links" data-i18n="nav.links">Enlaces</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Idioma">
+        <button class="lang-btn" type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge" data-i18n="badge">Sitio provisional</span>
+        <h1 data-i18n-html="hero.title">Estamos preparando <span>anime.codes</span></h1>
+        <p class="hero-text" data-i18n="hero.text">
+          Una landing temporal mientras terminamos algo más grande. Por ahora puedes seguirnos,
+          ver el proyecto y unirte a la comunidad.
+        </p>
+
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span id="rotating-text">Construyendo algo bonito para devs y fans del anime.</span>
+        </div>
+
+        <div class="cta-group" id="links">
+          <a class="btn btn-primary" href="https://x.com/AnimeCodesTeam" target="_blank" rel="noopener noreferrer">X / @AnimeCodesTeam</a>
+          <a class="btn btn-secondary" href="https://github.com/AnimeCodesTeam" target="_blank" rel="noopener noreferrer">GitHub / AnimeCodesTeam</a>
+          <a class="btn btn-discord" id="discord-btn" href="https://discord.gg/Gw7m8kC" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-overlay"></div>
+        <img src="assets/banner.png" alt="Banner anime.codes" class="hero-image" />
+      </div>
+    </section>
+
+    <section class="info-grid" id="contact">
+      <article class="info-card">
+        <h2 data-i18n="contact.title">Contacto rápido</h2>
+        <p data-i18n="contact.text">
+          Mientras la web completa llega, tus usuarios pueden encontrarte fácilmente en X,
+          GitHub y Discord.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-line">
+      © <span id="year"></span> anime.codes —
+      <span data-i18n="footer.tagline">Ubicado en el universo de anime.codes.</span>
+      ·
+      <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+    </p>
+    <p class="footer-credit" data-i18n-html="footer.byline">
+      En desarrollo con <span class="footer-heart" aria-hidden="true">💚</span> por
+      <a class="footer-link" href="https://happyuky7.com/" target="_blank" rel="noopener noreferrer">Happyuky7</a>
+      <span class="footer-credit-muted">— proyecto para la comunidad.</span>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
